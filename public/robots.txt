@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow: 
+Sitemap: http://banhmisub.com/sitemap.xml

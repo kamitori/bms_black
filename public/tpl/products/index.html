@@ -1,0 +1,11 @@
+<div ng-controller="ProductController">
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3">{{ title }}</h1>
+        <div ng-if="button">
+            <a href="{{ button.link }}" class="btn btn-info pull-right backend-action-bt">
+                <span>{{ button.title }}</span>
+            </a>
+        </div>
+    </div>
+    <ng-include src="template"></ng-include>
+</div>

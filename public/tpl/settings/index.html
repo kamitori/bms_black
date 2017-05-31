@@ -1,0 +1,125 @@
+<div ng-controller="SettingsController">
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3">Settings</h1>
+    </div>
+    <div class="col-md-12">        
+        <div class="panel panel-info" >
+            <div class="panel-body">
+                <form name="form"  method="POST" class="form-horizontal" ng-submit="submit()" ng-controller="SettingsController"  ng-submit="submit()">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Title</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" name="site_title" id="site_title" placeholder="Site title">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Meta title</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" id="meta_title"  name="meta_title" placeholder="Meta title">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Meta Description</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control fields" id="meta_description" name="meta_description"> </textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Keywords</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control fields" id="keywords" name="keywords"> </textarea>
+                            </div>
+                        </div>   
+                    </div>                    
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Direct 301 url</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" id="site_301_url" name="site_301_url" placeholder="301 url">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Direct 404 url</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" id="site_404_url" name="site_404_url" placeholder="404 url">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Direct 500 url</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" id="site_500_url" name="site_500_url" placeholder="500 url">
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Working hours</label>
+                            <div class="col-md-5">
+                                <div class="col-md-2">
+                                    From(AM):
+                                </div>
+                                <div class="col-md-10">
+                                    <input type="number" value="" class="form-control fields" id="from_hours" name="from_hours" ng-model="from_hours" placeholder="AM" min="8" max="12" ng-blur="mintime()">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="col-md-2">
+                                    To(PM):
+                                </div>
+                                <div class="col-md-10">
+                                    <input type="number" value="" class="form-control fields" ng-model="to_hours" id="to_hours" name="to_hours" placeholder="PM" min="13" max="23" ng-blur="maxtime()">
+                                </div>
+                            </div>                          
+                        </div>   
+                    </div>
+
+
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Beanstream Merchant ID</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" name="merchant_id" id="merchant_id" placeholder="Merchant ID">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Beanstream API Key</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" name="beanstream_api_key" id="beanstream_api_key" placeholder="Beanstream API Key">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">MailChimp API Key</label>
+                            <div class="col-md-10">
+                                <input type="text" value="" class="form-control fields" name="mailchimp_api_key" id="mailchimp_api_key" placeholder="MailChimp API Key">
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-2 col-md-9">
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>        
+    </div>
+</div>
